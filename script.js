@@ -12,7 +12,10 @@ let cartas = [
 		nome: 'Creator',
 		time: 'Team NV',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720917018050570/Screenshot_2021-04-05_creator_jpg_JPEG_Image_1473_808_pixels_-_Scaled_97.png',
@@ -21,7 +24,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 6,
 			Mentalidade: 4,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 8,
 		},
 	},
@@ -29,7 +32,10 @@ let cartas = [
 		nome: 'SoS',
 		time: 'Team NV',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720905697624145/Screenshot_2021-04-05_sos_jpg_JPEG_Image_1433_807_pixels_-_Scaled_97.png',
@@ -38,7 +44,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 10,
 			Mentalidade: 10,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 6,
 		},
 	},
@@ -46,7 +52,10 @@ let cartas = [
 		nome: 'DRG',
 		time: 'Team NV',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720915416219688/Screenshot_2021-04-05_dongraegu_jpg_JPEG_Image_1454_791_pixels_-_Scaled_99.png',
@@ -55,7 +64,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 6,
 			Mentalidade: 8,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 4,
 		},
 	},
@@ -63,7 +72,10 @@ let cartas = [
 		nome: 'Maru',
 		time: 'Team NV',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720909556121630/Screenshot_2021-04-05_maru_jpg_JPEG_Image_1435_806_pixels_-_Scaled_97.png',
@@ -72,7 +84,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 10,
 		},
 	},
@@ -80,7 +92,10 @@ let cartas = [
 		nome: 'Percival',
 		time: 'Team NV',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720912425287680/Screenshot_2021-04-05_percival_jpg_JPEG_Image_1440_806_pixels_-_Scaled_97.png',
@@ -89,7 +104,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 7,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 7,
 		},
 	},
@@ -97,7 +112,10 @@ let cartas = [
 		nome: 'Stats',
 		time: 'Afreeca Freecs',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722178382889040/Screenshot_2021-04-05_stats_jpg_JPEG_Image_1435_802_pixels_-_Scaled_98.png',
@@ -106,7 +124,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 7,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 9,
 		},
 	},
@@ -114,7 +132,10 @@ let cartas = [
 		nome: 'Armani',
 		time: 'Afreeca Freecs',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722180237426698/Screenshot_2021-04-05_armani_jpg_JPEG_Image_1428_799_pixels_-_Scaled_98.png',
@@ -123,7 +144,7 @@ let cartas = [
 			Defesa: 7,
 			Tática: 7,
 			Mentalidade: 6,
-			"Game Sense": 7,
+			'Game Sense': 7,
 			Micro: 6,
 		},
 	},
@@ -131,7 +152,10 @@ let cartas = [
 		nome: 'Trap',
 		time: 'Afreeca Freecs',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722182389235763/Screenshot_2021-04-05_trap_jpg_JPEG_Image_1432_804_pixels_-_Scaled_97.png',
@@ -140,7 +164,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 10,
 		},
 	},
@@ -148,7 +172,10 @@ let cartas = [
 		nome: 'TY',
 		time: 'Afreeca Freecs',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722177187512330/Screenshot_2021-04-05_ty_jpg_JPEG_Image_1442_797_pixels_-_Scaled_98.png',
@@ -157,7 +184,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 6,
 		},
 	},
@@ -165,7 +192,10 @@ let cartas = [
 		nome: 'ByuN',
 		time: 'Shopify Rebellion',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720997783175178/Screenshot_2021-04-05_byun_jpg_JPEG_Image_1435_809_pixels_-_Scaled_97.png',
@@ -174,7 +204,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 9,
 		},
 	},
@@ -182,7 +212,10 @@ let cartas = [
 		nome: 'Lambo',
 		time: 'Shopify Rebellion',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/912c9392.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/912c9392.png',
+			paisAlt: 'Alemanha',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720991382798337/Screenshot_2021-04-05_lambo_jpg_JPEG_Image_1438_797_pixels_-_Scaled_98.png',
@@ -191,7 +224,7 @@ let cartas = [
 			Defesa: 4,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 6,
 		},
 	},
@@ -199,7 +232,10 @@ let cartas = [
 		nome: 'Scarlett',
 		time: 'Shopify Rebellion',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/42d29b63.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/42d29b63.png',
+			paisAlt: 'Canadá',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828720996701438002/Screenshot_2021-04-05_scarlett_jpg_JPEG_Image_1438_802_pixels_-_Scaled_98.png',
@@ -208,7 +244,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 6,
 		},
 	},
@@ -216,7 +252,10 @@ let cartas = [
 		nome: 'Clem',
 		time: 'Team Liquid',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/901a1c0a.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/901a1c0a.png',
+			paisAlt: 'França',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828762080219889684/Screenshot_2021-04-05_clem_jpg_JPEG_Image_1443_786_pixels_-_Scaled_99.png',
@@ -225,7 +264,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 6,
 			Mentalidade: 8,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 10,
 		},
 	},
@@ -233,7 +272,10 @@ let cartas = [
 		nome: 'Harstem',
 		time: 'Team Liquid',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/719588b1.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/719588b1.png',
+			paisAlt: 'Países Baixos',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828762079871238144/Screenshot_2021-04-05_harstem_jpg_JPEG_Image_1443_805_pixels_-_Scaled_97.png',
@@ -242,7 +284,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 6,
 			Mentalidade: 8,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 6,
 		},
 	},
@@ -250,7 +292,10 @@ let cartas = [
 		nome: 'MaNa',
 		time: 'Team Liquid',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/8f6c042d.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/8f6c042d.png',
+			paisAlt: 'Polônia',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828762079229378601/Screenshot_2021-04-05_mana_jpg_JPEG_Image_1441_803_pixels_-_Scaled_97.png',
@@ -259,7 +304,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 6,
 		},
 	},
@@ -267,7 +312,10 @@ let cartas = [
 		nome: 'Kelazhur',
 		time: 'Team Liquid',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/cb286b9b.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/cb286b9b.png',
+			paisAlt: 'Brasil',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828762077375102996/Screenshot_2021-04-05_Twitch.png',
@@ -276,7 +324,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 7,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 7,
 		},
 	},
@@ -284,7 +332,10 @@ let cartas = [
 		nome: 'Rogue',
 		time: 'Dragon Phoenix Gaming',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828765177431588864/Screenshot_2021-04-05_rogue_jpg_JPEG_Image_1443_791_pixels_-_Scaled_99.png',
@@ -293,7 +344,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 10,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 8,
 		},
 	},
@@ -301,7 +352,10 @@ let cartas = [
 		nome: 'Zest',
 		time: 'Dragon Phoenix Gaming',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828765177498304522/Screenshot_2021-04-05_zest_jpg_JPEG_Image_1440_808_pixels_-_Scaled_97.png',
@@ -310,7 +364,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 10,
 		},
 	},
@@ -318,7 +372,10 @@ let cartas = [
 		nome: 'Cure',
 		time: 'Dragon Phoenix Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828765181831151636/Screenshot_2021-04-05_cure_jpg_JPEG_Image_1444_805_pixels_-_Scaled_97.png',
@@ -327,7 +384,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 8,
 		},
 	},
@@ -335,7 +392,10 @@ let cartas = [
 		nome: 'Dark',
 		time: 'Dragon Phoenix Gaming',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828765191302545408/Screenshot_2021-04-05_Twitch1.png',
@@ -344,7 +404,7 @@ let cartas = [
 			Defesa: 10,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 10,
 		},
 	},
@@ -352,7 +412,10 @@ let cartas = [
 		nome: 'Astrea',
 		time: 'Alpha X',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/65032114.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/65032114.png',
+			paisAlt: 'Estados Unidos da América',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828756662302015569/Screenshot_2021-04-05_astrea_jpg_JPEG_Image_1451_790_pixels_-_Scaled_99.png',
@@ -361,7 +424,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 6,
 		},
 	},
@@ -369,7 +432,10 @@ let cartas = [
 		nome: 'Nice',
 		time: 'Alpha X',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/baca6fea.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/baca6fea.png',
+			paisAlt: 'Taiwan',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828756664119328808/Nice.png',
@@ -378,7 +444,7 @@ let cartas = [
 			Defesa: 5,
 			Tática: 7,
 			Mentalidade: 7,
-			"Game Sense": 5,
+			'Game Sense': 5,
 			Micro: 6,
 		},
 	},
@@ -386,7 +452,10 @@ let cartas = [
 		nome: 'Zoun',
 		time: 'Alpha X',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828756657286021130/Screenshot_2021-04-05_zoun_jpg_JPEG_Image_1451_801_pixels_-_Scaled_98.png',
@@ -395,7 +464,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 6,
 		},
 	},
@@ -403,7 +472,10 @@ let cartas = [
 		nome: 'RagnaroK',
 		time: 'Alpha X',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828756658946965514/Screenshot_2021-04-05_ragnarok_jpg_JPEG_Image_1458_783_pixels_-_Scaled_98.png',
@@ -412,7 +484,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 6,
 		},
 	},
@@ -420,7 +492,10 @@ let cartas = [
 		nome: 'INnoVation',
 		time: 'KaiZi Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828721486185103370/Screenshot_2021-04-05_innovation_jpg_JPEG_Image_1437_800_pixels_-_Scaled_98.png',
@@ -429,7 +504,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 8,
 			Mentalidade: 10,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 8,
 		},
 	},
@@ -437,7 +512,10 @@ let cartas = [
 		nome: 'Solar',
 		time: 'KaiZi Gaming',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828721485031014400/Screenshot_2021-04-05_solar_jpg_JPEG_Image_1443_800_pixels_-_Scaled_98.png',
@@ -446,7 +524,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 10,
+			'Game Sense': 10,
 			Micro: 8,
 		},
 	},
@@ -454,7 +532,10 @@ let cartas = [
 		nome: 'TIME',
 		time: 'KaiZi Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828721482892836954/Screenshot_2021-04-05_time_jpg_JPEG_Image_1439_804_pixels_-_Scaled_97.png',
@@ -463,7 +544,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 8,
 		},
 	},
@@ -471,7 +552,10 @@ let cartas = [
 		nome: 'Patience',
 		time: 'Good Game Gaming',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722707004260382/Screenshot_2021-04-05_patience_jpg_JPEG_Image_1443_794_pixels_-_Scaled_98.png',
@@ -480,7 +564,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 4,
 			Mentalidade: 6,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 8,
 		},
 	},
@@ -488,7 +572,10 @@ let cartas = [
 		nome: 'Dream',
 		time: 'Good Game Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722714302611456/Screenshot_2021-04-05_dream_jpg_JPEG_Image_1462_828_pixels_-_Scaled_94.png',
@@ -497,7 +584,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 8,
 		},
 	},
@@ -505,7 +592,10 @@ let cartas = [
 		nome: 'Cyan',
 		time: 'Good Game Gaming',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828722707767623721/Screenshot_2021-04-05_cyan_jpg_JPEG_Image_1443_790_pixels_-_Scaled_99.png',
@@ -514,7 +604,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 6,
 			Mentalidade: 4,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 6,
 		},
 	},
@@ -522,7 +612,10 @@ let cartas = [
 		nome: 'Cham',
 		time: 'Team eXoN',
 		raca: 'Zerg',
-		pais: 'https://duckduckgo.com/i/5d875af6.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/5d875af6.png',
+			paisAlt: 'México',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828761520334569562/Screenshot_2021-04-05_cham_jpg_JPEG_Image_1441_793_pixels_-_Scaled_99.png',
@@ -531,7 +624,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 6,
 		},
 	},
@@ -539,7 +632,10 @@ let cartas = [
 		nome: 'SpeCial',
 		time: 'Team eXoN',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/5d875af6.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/5d875af6.png',
+			paisAlt: 'México',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828761518698790912/Screenshot_2021-04-05_special_jpg_JPEG_Image_1440_793_pixels_-_Scaled_99.png',
@@ -548,7 +644,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 8,
 			Mentalidade: 8,
-			"Game Sense": 8,
+			'Game Sense': 8,
 			Micro: 8,
 		},
 	},
@@ -556,7 +652,10 @@ let cartas = [
 		nome: 'XY',
 		time: 'Invictus Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828768004653056020/Screenshot_2021-04-05_xy_jpg_JPEG_Image_1455_787_pixels_-_Scaled_98.png',
@@ -565,7 +664,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 4,
 			Mentalidade: 10,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 2,
 		},
 	},
@@ -573,7 +672,10 @@ let cartas = [
 		nome: 'MacSed',
 		time: 'Invictus Gaming',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828767998500143124/Screenshot_2021-04-05_macsed_jpg_JPEG_Image_1521_809_pixels_-_Scaled_94.png',
@@ -582,7 +684,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 4,
 		},
 	},
@@ -590,7 +692,10 @@ let cartas = [
 		nome: 'Coffee',
 		time: 'Invictus Gaming',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828767995202895942/Screenshot_2021-04-05_coffee_jpg_JPEG_Image_1436_801_pixels_-_Scaled_98.png',
@@ -599,7 +704,7 @@ let cartas = [
 			Defesa: 4,
 			Tática: 6,
 			Mentalidade: 2,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 8,
 		},
 	},
@@ -607,7 +712,10 @@ let cartas = [
 		nome: 'Alka',
 		time: 'Team LaoPaoer',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828771613910368337/Screenshot_2021-04-05_alka_jpg_JPEG_Image_1432_804_pixels_-_Scaled_97.png',
@@ -616,7 +724,7 @@ let cartas = [
 			Defesa: 4,
 			Tática: 4,
 			Mentalidade: 4,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 4,
 		},
 	},
@@ -624,7 +732,10 @@ let cartas = [
 		nome: 'Jieshi',
 		time: 'Team LaoPaoer',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828771610378502144/Screenshot_2021-04-05_jieshi_jpg_JPEG_Image_1435_793_pixels_-_Scaled_99.png',
@@ -633,7 +744,7 @@ let cartas = [
 			Defesa: 4,
 			Tática: 6,
 			Mentalidade: 6,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 6,
 		},
 	},
@@ -641,7 +752,10 @@ let cartas = [
 		nome: 'Wanted',
 		time: 'Team LaoPaoer',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/86271b84.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/86271b84.png',
+			paisAlt: 'China',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/zerg.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828771607328587776/Screenshot_2021-04-05_wanted_jpg_JPEG_Image_1435_800_pixels_-_Scaled_98.png',
@@ -650,7 +764,7 @@ let cartas = [
 			Defesa: 4,
 			Tática: 4,
 			Mentalidade: 4,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 6,
 		},
 	},
@@ -658,7 +772,10 @@ let cartas = [
 		nome: 'NaTuRal',
 		time: 'Team GP',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828775257635815434/NaTuRal.png',
@@ -667,7 +784,7 @@ let cartas = [
 			Defesa: 5,
 			Tática: 5,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 5,
 		},
 	},
@@ -675,7 +792,10 @@ let cartas = [
 		nome: 'Ryung',
 		time: 'Team GP',
 		raca: 'Terran',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/terran.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828775256121409606/Screenshot_2021-04-05_ryung_jpg_JPEG_Image_1447_708_pixels_-_Scaled_991.png',
@@ -684,7 +804,7 @@ let cartas = [
 			Defesa: 8,
 			Tática: 4,
 			Mentalidade: 6,
-			"Game Sense": 6,
+			'Game Sense': 6,
 			Micro: 4,
 		},
 	},
@@ -692,7 +812,10 @@ let cartas = [
 		nome: 'Prince',
 		time: 'Team GP',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828775256755666944/Prince.png',
@@ -701,7 +824,7 @@ let cartas = [
 			Defesa: 5,
 			Tática: 8,
 			Mentalidade: 6,
-			"Game Sense": 5,
+			'Game Sense': 5,
 			Micro: 5,
 		},
 	},
@@ -709,7 +832,10 @@ let cartas = [
 		nome: 'Puzzle',
 		time: 'Team GP',
 		raca: 'Protoss',
-		pais: 'https://duckduckgo.com/i/35f25a64.png',
+		pais: {
+			paisImg: 'https://duckduckgo.com/i/35f25a64.png',
+			paisAlt: 'Coreia do Sul',
+		},
 		icon: 'https://www.rankedftw.com/static/01c2f01/img/races/protoss.svg',
 		imagem:
 			'https://cdn.discordapp.com/attachments/828720741847400547/828776959009488946/Screenshot_2021-04-05_puzzle_jpg_JPEG_Image_1454_805_pixels_-_Scaled_97.png',
@@ -718,7 +844,7 @@ let cartas = [
 			Defesa: 6,
 			Tática: 4,
 			Mentalidade: 6,
-			"Game Sense": 4,
+			'Game Sense': 4,
 			Micro: 6,
 		},
 	},
@@ -845,15 +971,17 @@ function exibeCartaJogador() {
 	nome.textContent = cartaJogador.nome;
 	let imgCartaJogador = document.querySelector('.img-carta-jogador');
 	imgCartaJogador.src = cartaJogador.imagem;
-	imgCartaJogador.alt = cartaJogador.nome;
+	imgCartaJogador.alt = 'Jogador ' + cartaJogador.nome;
 	let time = document.querySelector('.time');
 	time.textContent = cartaJogador.time;
 	let raca = document.querySelector('.raca');
 	raca.textContent = cartaJogador.raca;
 	let pais = document.querySelector('.pais');
-	pais.src = cartaJogador.pais;
+	pais.src = cartaJogador.pais.paisImg;
+	pais.alt = 'País: ' + cartaJogador.pais.paisAlt;
 	let icon = document.querySelector('.icon');
 	icon.src = cartaJogador.icon;
+	icon.alt = 'Logo da raça escolhida pelo jogador: ' + cartaJogador.raca;
 
 	var opcoesTexto = '';
 
@@ -993,9 +1121,11 @@ function exibeCartaMaquina() {
 	let racaMaq = document.querySelector('.raca-maq');
 	racaMaq.textContent = cartaMaquina.raca;
 	let paisMaq = document.querySelector('.pais-maq');
-	paisMaq.src = cartaMaquina.pais;
+	paisMaq.src = cartaMaquina.pais.paisImg;
+	paisMaq.alt = 'País: ' + cartaMaquina.pais.paisAlt;
 	let iconMaq = document.querySelector('.icon-maq');
 	iconMaq.src = cartaMaquina.icon;
+	iconMaq.alt = 'Logo da raça escolhida pelo jogador: ' + cartaMaquina.raca;
 
 	var opcoesTexto = '';
 

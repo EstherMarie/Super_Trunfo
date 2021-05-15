@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preload" href="./script.js" as="script">
 		<link rel="stylesheet" href="./style.css" />
 		<title>Super Trunfo - World Team League 2021</title>
 	</head>
@@ -12,7 +13,7 @@
 			<img
 				src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
 				class="page-logo"
-				alt=""
+				alt="Logo Imersão Dev da Alura"
 			/>
 			<h1 class="page-title">Super Trunfo - World Team League 2021</h1>
 			<button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
@@ -29,7 +30,7 @@
 							<div class="card-back card-back-player"></div>
 							<div class="carta-jogador">
 								<div class="area-nome">
-									<img src="" class="pais" />
+									<img src="" class="pais" alt="" />
 									<h2 class="player">Player</h2>
 								</div>
 								<div class="area-imagem">
@@ -59,7 +60,7 @@
 							<div class="card-back card-back-maquina"></div>
 							<div class="carta-maquina" class="carta">
 								<div class="area-nome">
-									<img src="" class="pais pais-maq" />
+									<img src="" class="pais pais-maq" alt="" />
 									<h2 class="player player-maq">Player</h2>
 								</div>
 								<div class="area-imagem">
@@ -121,6 +122,6 @@
 			</form>
 		</div>
 
-		<script src="./script.js"></script>
+		<script src="./script.js" defer></script>
 	</body>
 </html>
