@@ -81,9 +81,13 @@ h2 {
 	justify-content: space-around;
 }
 
-.placar {
+.area-placar {
 	color: white;
 	height: 5vh;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .quantidade-cartas {
@@ -264,6 +268,7 @@ h2 {
 	color: black;
 	font-size: 14px;
 	font-weight: normal;
+	width: max-content;
 }
 
 .div-detalhes {
