@@ -62,7 +62,7 @@ button:disabled {
 	background-color: rgba(255, 255, 255, 0.521);
 	color: gray;
 	box-shadow: none;
-  }
+}
 
 /* form */
 form {
@@ -250,10 +250,20 @@ h2 {
 	margin: 1%;
 }
 
-.area-detalhes h4 {
+.area-detalhes .titulo-detalhes {
+	display: contents;
 	font-family: 'Bebas Neue', cursive;
 	color: #dcaa50;
-	font-size: 20px;
+	font-size: 18px;
+	/* font-weight: 300; */
+	line-height: 1rem;
+}
+
+.area-detalhes span {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 .div-detalhes {
