@@ -43,14 +43,14 @@ button,
 	border-radius: 5px;
 	border: none;
 	font-size: 1rem;
-	background-color: #1b74ff;
+	background-color: #0a4eb9;
 	color: #ffffff;
 	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
 	opacity: 95%;
-	background-color: #094ca6;
+	background-color: #02234e;
 }
 
 button:disabled {
