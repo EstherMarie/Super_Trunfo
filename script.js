@@ -852,20 +852,20 @@ let cartas = [
 
 /*
   {
-    nome: "",
-    time: "",
-    raca: "",
-    pais: "",
+	nome: "",
+	time: "",
+	raca: "",
+	pais: "",
 	icon: "",
-    imagem: "",
-    atributos: {
-      Ataque: ,
-      Defesa: ,
-      Tática: ,
-      Mentalidade: ,
-      "Game Sense": ,
-      Micro: 
-    }
+	imagem: "",
+	atributos: {
+	  Ataque: ,
+	  Defesa: ,
+	  Tática: ,
+	  Mentalidade: ,
+	  "Game Sense": ,
+	  Micro: 
+	}
   }
 */
 
@@ -912,15 +912,9 @@ function atualizaQuantidadeDeCartas() {
 	let divQuantidadeCartasJogador = document.querySelector('.cartas-jogador');
 	let divQuantidadeCartasMaquina = document.querySelector('.cartas-maquina');
 	// let html = 'Quantidade de cartas no jogo: ' + cartas.length;
-	let cartasJogador =
-		`<p>Sua quantidade de cartas no jogo: ` +
-		arrCartasJogador.length +
-		`</p>`;
+	let cartasJogador = `<p>Sua quantidade de cartas no jogo: ${arrCartasJogador.length}</p>`;
 
-	let cartasMaquina =
-		`<p>Quantidade de cartas do computador: ` +
-		arrCartasMaquina.length +
-		`</p>`;
+	let cartasMaquina = `<p>Quantidade de cartas do computador: ${arrCartasMaquina.length}</p>`;
 
 	divQuantidadeCartasJogador.innerHTML = cartasJogador;
 	divQuantidadeCartasMaquina.innerHTML = cartasMaquina;
@@ -928,7 +922,7 @@ function atualizaQuantidadeDeCartas() {
 
 function atualizaPlacar() {
 	let divPlacar = document.querySelector('.placar');
-	let html = 'Jogador ' + pontosJogador + ' / ' + pontosMaquina + ' Máquina';
+	let html = `Jogador ${pontosJogador} / ${pontosMaquina} Máquina`;
 
 	divPlacar.innerHTML = html;
 }
@@ -950,17 +944,17 @@ function sortearCarta() {
 
 	document.getElementById('btnSortear').disabled = true;
 	/*
-  	document.getElementById("btnJogar").disabled = false;
-  	*/
+		document.getElementById("btnJogar").disabled = false;
+		*/
 
 	// let cardJogador = document.querySelector('.card-jogador');
 
 	exibeCartaJogador();
 
 	/* Declarada no escopo global:
- 	 let card_back_player = document.querySelector(".card-back-player");
-  	let carta_jogador = document.querySelector(".carta-jogador");
- 	 */
+	   let card_back_player = document.querySelector(".card-back-player");
+		let carta_jogador = document.querySelector(".carta-jogador");
+	   */
 
 	card_back_player.style.display = 'none';
 	carta_jogador.style.display = 'flex';
@@ -971,32 +965,22 @@ function exibeCartaJogador() {
 	nome.textContent = cartaJogador.nome;
 	let imgCartaJogador = document.querySelector('.img-carta-jogador');
 	imgCartaJogador.src = cartaJogador.imagem;
-	imgCartaJogador.alt = 'Jogador ' + cartaJogador.nome;
+	imgCartaJogador.alt = `Jogador ${cartaJogador.nome}`;
 	let time = document.querySelector('.time');
 	time.textContent = cartaJogador.time;
 	let raca = document.querySelector('.raca');
 	raca.textContent = cartaJogador.raca;
 	let pais = document.querySelector('.pais');
 	pais.src = cartaJogador.pais.paisImg;
-	pais.alt = 'País: ' + cartaJogador.pais.paisAlt;
+	pais.alt = `País: ${cartaJogador.pais.paisAlt}`;
 	let icon = document.querySelector('.icon');
 	icon.src = cartaJogador.icon;
-	icon.alt = 'Logo da raça escolhida pelo jogador: ' + cartaJogador.raca;
+	icon.alt = `Logo da raça escolhida pelo jogador: ${cartaJogador.raca}`;
 
 	var opcoesTexto = '';
 
 	for (var atributo in cartaJogador.atributos) {
-		opcoesTexto +=
-			"<div><input type='radio' name='atributo' aria-label='" +
-			atributo +
-			cartaJogador.atributos[atributo] +
-			"' onClick='ativarBotaoJogar()' value='" +
-			atributo +
-			"'>" +
-			atributo +
-			' ' +
-			cartaJogador.atributos[atributo] +
-			'</div>';
+		opcoesTexto += `<div><input type='radio' name='atributo' aria-label='${atributo} ${cartaJogador.atributos[atributo]}' onClick='ativarBotaoJogar()' value='${atributo}'>${atributo} ${cartaJogador.atributos[atributo]}</div>`;
 	}
 
 	let areaAtributos = document.querySelector('.area-atributos');
@@ -1071,8 +1055,7 @@ function jogar() {
 	// 	}
 	// }
 	if (arrCartasMaquina == 0) {
-		htmlResultado =
-			'<p class="resultado-final">Parabéns! :D <br> Você venceu!</p>';
+		htmlResultado = '<p class="resultado-final">Parabéns! :D <br> Você venceu!</p>';
 		btnRodada.disabled = true;
 	} else if (arrCartasJogador == 0) {
 		htmlResultado = '<p class="resultado-final">Você perdeu ☹</p>';
@@ -1118,27 +1101,22 @@ function exibeCartaMaquina() {
 
 	let imgCartaMaquina = document.querySelector('.img-carta-maquina');
 	imgCartaMaquina.src = cartaMaquina.imagem;
-	imgCartaMaquina.alt = 'Jogador ' + cartaMaquina.nome;
+	imgCartaMaquina.alt = `Jogador ${cartaMaquina.nome}`;
 	let timeMaq = document.querySelector('.time-maq');
 	timeMaq.textContent = cartaMaquina.time;
 	let racaMaq = document.querySelector('.raca-maq');
 	racaMaq.textContent = cartaMaquina.raca;
 	let paisMaq = document.querySelector('.pais-maq');
 	paisMaq.src = cartaMaquina.pais.paisImg;
-	paisMaq.alt = 'País: ' + cartaMaquina.pais.paisAlt;
+	paisMaq.alt = `País: ${cartaMaquina.pais.paisAlt}`;
 	let iconMaq = document.querySelector('.icon-maq');
 	iconMaq.src = cartaMaquina.icon;
-	iconMaq.alt = 'Logo da raça escolhida pelo jogador: ' + cartaMaquina.raca;
+	iconMaq.alt = `Logo da raça escolhida pelo jogador: ${cartaMaquina.raca}`;
 
 	var opcoesTexto = '';
 
 	for (var atributo in cartaMaquina.atributos) {
-		opcoesTexto +=
-			'<div><p>' +
-			atributo +
-			' ' +
-			cartaMaquina.atributos[atributo] +
-			'</p></div>';
+		opcoesTexto += `<div><p>${atributo} ${cartaMaquina.atributos[atributo]}</p></div>`;
 	}
 
 	let areaAtributosMaq = document.querySelector('.area-atributos-maq');

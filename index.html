@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preload" href="./script.js" as="script" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>Super Trunfo - World Team League 2021</title>
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preload" href="./script.js" as="script" />
+	<link rel="stylesheet" href="./style.css" />
+	<title>Super Trunfo - World Team League 2021</title>
+</head>
+
+<body>
+	<main>
 		<div class="container">
-			<img
-				src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-				class="page-logo"
-				alt="Logo Imersão Dev da Alura"
-			/>
+			<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
+				class="page-logo" alt="Logo Imersão Dev da Alura" />
 			<h1 class="page-title">Super Trunfo - World Team League 2021</h1>
 
 			<form id="form">
@@ -84,9 +84,7 @@
 										</div>
 									</div>
 									<div class="area-jogo">
-										<div
-											class="area-atributos area-atributos-maq"
-										></div>
+										<div class="area-atributos area-atributos-maq"></div>
 										<div class="imagem">
 											<img src="" class="icon icon-maq" alt="" />
 										</div>
@@ -96,41 +94,24 @@
 						</div>
 					</div>
 				</div>
-				<button onclick="sortearCarta()" id="btnSortear">
-					Sortear carta
-				</button>
-				<button
-					class="button-jogar"
-					type="button"
-					id="btnJogar"
-					onclick="jogar()"
-					disabled="false"
-				>
-					Jogar
-				</button>
-				<div id="resultado"></div>
-				<button
-					type="button"
-					id="btnProximaRodada"
-					onclick="proximaRodada()"
-					disabled="true"
-					style="display: none"
-				>
-					Proxima rodada
-				</button>
+
 				<div class="info-liga">
 					<p>
 						Curtiu os jogadores? Veja mais detalhes sobre a liga no
-						<a
-							href="https://liquipedia.net/starcraft2/World_Team_League/2021/Summer"
-							target="_blank"
-							>Liquipedia</a
-						>.
+						<a href="https://liquipedia.net/starcraft2/World_Team_League/2021/Summer"
+							target="_blank">Liquipedia</a>.
 					</p>
 				</div>
 			</form>
+			<button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+			<button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+			<div id="resultado"></div>
+			<button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true"
+				style="display: none">Proxima rodada</button>
 		</div>
+	</main>
 
-		<script src="./script.js" defer></script>
-	</body>
+	<script src="./script.js" defer></script>
+</body>
+
 </html>
