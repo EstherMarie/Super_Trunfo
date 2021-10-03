@@ -912,15 +912,9 @@ function atualizaQuantidadeDeCartas() {
 	let divQuantidadeCartasJogador = document.querySelector('.cartas-jogador');
 	let divQuantidadeCartasMaquina = document.querySelector('.cartas-maquina');
 	// let html = 'Quantidade de cartas no jogo: ' + cartas.length;
-	let cartasJogador =
-		`<p>Sua quantidade de cartas no jogo: ` +
-		arrCartasJogador.length +
-		`</p>`;
+	let cartasJogador =`<p>Sua quantidade de cartas no jogo: ${arrCartasJogador.length}</p>`;
 
-	let cartasMaquina =
-		`<p>Quantidade de cartas do computador: ` +
-		arrCartasMaquina.length +
-		`</p>`;
+	let cartasMaquina = `<p>Quantidade de cartas do computador: ${arrCartasMaquina.length}</p>`;
 
 	divQuantidadeCartasJogador.innerHTML = cartasJogador;
 	divQuantidadeCartasMaquina.innerHTML = cartasMaquina;
@@ -928,7 +922,7 @@ function atualizaQuantidadeDeCartas() {
 
 function atualizaPlacar() {
 	let divPlacar = document.querySelector('.placar');
-	let html = 'Jogador ' + pontosJogador + ' / ' + pontosMaquina + ' Máquina';
+	let html = `Jogador ${pontosJogador} / ${pontosMaquina} Máquina`;
 
 	divPlacar.innerHTML = html;
 }
@@ -986,17 +980,7 @@ function exibeCartaJogador() {
 	var opcoesTexto = '';
 
 	for (var atributo in cartaJogador.atributos) {
-		opcoesTexto +=
-			"<div><input type='radio' name='atributo' aria-label='" +
-			atributo +
-			cartaJogador.atributos[atributo] +
-			"' onClick='ativarBotaoJogar()' value='" +
-			atributo +
-			"'>" +
-			atributo +
-			' ' +
-			cartaJogador.atributos[atributo] +
-			'</div>';
+		opcoesTexto += `<div><input type='radio' name='atributo' aria-label='${atributo} ${cartaJogador.atributos[atributo]}' onClick='ativarBotaoJogar()' value='${atributo}'>${atributo} ${cartaJogador.atributos[atributo]}</div>`;
 	}
 
 	let areaAtributos = document.querySelector('.area-atributos');
@@ -1133,12 +1117,7 @@ function exibeCartaMaquina() {
 	var opcoesTexto = '';
 
 	for (var atributo in cartaMaquina.atributos) {
-		opcoesTexto +=
-			'<div><p>' +
-			atributo +
-			' ' +
-			cartaMaquina.atributos[atributo] +
-			'</p></div>';
+		opcoesTexto += `<div><p>${atributo} ${cartaMaquina.atributos[atributo]}</p></div>`;
 	}
 
 	let areaAtributosMaq = document.querySelector('.area-atributos-maq');
