@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./script.js" as="script" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Super Trunfo - World Team League 2021</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preload" href="./script.js" as="script" />
-	<link rel="stylesheet" href="./style.css" />
-	<title>Super Trunfo - World Team League 2021</title>
-</head>
+  <body>
+    <main>
+      <div class="container">
+        <img
+          src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
+          class="page-logo"
+          alt="Logo Imersão Dev da Alura"
+        />
+        <h1 class="page-title">Super Trunfo - World Team League 2021</h1>
 
-<body>
-	<main>
-		<div class="container">
-			<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-				class="page-logo" alt="Logo Imersão Dev da Alura" />
-			<h1 class="page-title">Super Trunfo - World Team League 2021</h1>
+        <form id="form">
+          <h2>Escolha o seu atributo</h2>
+          <div class="wrapper">
+            <div class="area-placar">Placar: <span class="placar"></span></div>
+            <div class="quantidade-cartas">
+              <div class="cartas-jogador"></div>
+              <div class="cartas-maquina"></div>
+            </div>
+            <div class="cartas">
+              <div class="card card-jogador">
+                <div class="card-back card-back-player"></div>
+                <div class="carta-jogador">
+                  <div class="area-nome">
+                    <img src="" class="pais" alt="" />
+                    <h2 class="player">Player</h2>
+                  </div>
+                  <div class="area-imagem">
+                    <img src="" class="img-carta-jogador" alt="" />
+                  </div>
+                  <div class="area-info">
+                    <div class="area-detalhes">
+                      <div class="div-detalhes">
+                        <p class="titulo-detalhes">
+                          Time: <span class="time"></span>
+                        </p>
+                      </div>
+                      <div class="div-detalhes">
+                        <p class="titulo-detalhes">
+                          Raça: <span class="raca"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="area-jogo">
+                      <div class="area-atributos"></div>
+                      <div class="imagem">
+                        <img src="" class="icon" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-maquina">
+                <div class="card-back card-back-maquina"></div>
+                <div class="carta-maquina" class="carta">
+                  <div class="area-nome">
+                    <img src="" class="pais pais-maq" alt="" />
+                    <h2 class="player player-maq">Player</h2>
+                  </div>
+                  <div class="area-imagem">
+                    <img src="" class="img-carta-maquina" alt="" />
+                  </div>
+                  <div class="area-info">
+                    <div class="area-detalhes">
+                      <div class="div-detalhes">
+                        <p class="titulo-detalhes">
+                          Time: <span class="time time-maq"></span>
+                        </p>
+                      </div>
+                      <div class="div-detalhes">
+                        <p class="titulo-detalhes">
+                          Raça: <span class="raca raca-maq"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="area-jogo">
+                      <div class="area-atributos area-atributos-maq"></div>
+                      <div class="imagem">
+                        <img src="" class="icon icon-maq" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
 
-			<form id="form">
-				<h2>Escolha o seu atributo</h2>
-				<div class="wrapper">
-					<div class="area-placar">
-						Placar: <span class="placar"></span>
-					</div>
-					<div class="quantidade-cartas">
-						<div class="cartas-jogador"></div>
-						<div class="cartas-maquina"></div>
-					</div>
-					<div class="cartas">
-						<div class="card card-jogador">
-							<div class="card-back card-back-player"></div>
-							<div class="carta-jogador">
-								<div class="area-nome">
-									<img src="" class="pais" alt="" />
-									<h2 class="player">Player</h2>
-								</div>
-								<div class="area-imagem">
-									<img src="" class="img-carta-jogador" alt="" />
-								</div>
-								<div class="area-info">
-									<div class="area-detalhes">
-										<div class="div-detalhes">
-											<p class="titulo-detalhes">
-												Time: <span class="time"></span>
-											</p>
-										</div>
-										<div class="div-detalhes">
-											<p class="titulo-detalhes">
-												Raça: <span class="raca"></span>
-											</p>
-										</div>
-									</div>
-									<div class="area-jogo">
-										<div class="area-atributos"></div>
-										<div class="imagem">
-											<img src="" class="icon" alt="" />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card card-maquina">
-							<div class="card-back card-back-maquina"></div>
-							<div class="carta-maquina" class="carta">
-								<div class="area-nome">
-									<img src="" class="pais pais-maq" alt="" />
-									<h2 class="player player-maq">Player</h2>
-								</div>
-								<div class="area-imagem">
-									<img src="" class="img-carta-maquina" alt="" />
-								</div>
-								<div class="area-info">
-									<div class="area-detalhes">
-										<div class="div-detalhes">
-											<p class="titulo-detalhes">
-												Time: <span class="time time-maq"></span>
-											</p>
-										</div>
-										<div class="div-detalhes">
-											<p class="titulo-detalhes">
-												Raça: <span class="raca raca-maq"></span>
-											</p>
-										</div>
-									</div>
-									<div class="area-jogo">
-										<div class="area-atributos area-atributos-maq"></div>
-										<div class="imagem">
-											<img src="" class="icon icon-maq" alt="" />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <button
+          class="button-jogar"
+          type="button"
+          id="btnJogar"
+          onclick="jogar()"
+          disabled="false"
+        >
+          Jogar
+        </button>
+        <div id="resultado"></div>
+        <button
+          type="button"
+          id="btnProximaRodada"
+          onclick="proximaRodada()"
+          disabled="true"
+          style="display: none"
+        >
+          Proxima rodada
+        </button>
 
-				<div class="info-liga">
-					<p>
-						Curtiu os jogadores? Veja mais detalhes sobre a liga no
-						<a href="https://liquipedia.net/starcraft2/World_Team_League/2021/Summer"
-							target="_blank">Liquipedia</a>.
-					</p>
-				</div>
-			</form>
-			<button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
-			<button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
-			<div id="resultado"></div>
-			<button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true"
-				style="display: none">Proxima rodada</button>
-		</div>
-	</main>
+        <div class="info-liga">
+          <p>
+            Curtiu os jogadores? Veja mais detalhes sobre a liga no
+            <a
+              href="https://liquipedia.net/starcraft2/World_Team_League/2021/Summer"
+              target="_blank"
+              >Liquipedia</a
+            >.
+          </p>
+        </div>
+      </div>
+    </main>
 
-	<script src="./script.js" defer></script>
-</body>
-
+    <script src="./script.js" defer></script>
+  </body>
 </html>

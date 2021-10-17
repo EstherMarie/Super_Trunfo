@@ -1,464 +1,473 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	max-width: 100vw;
-	min-height: 854px;
-	background-image: url('https://cdn.discordapp.com/attachments/730091580706259084/827370039388667934/20210401_233606.jpg');
-	background-color: #000000;
-	background-size: cover;
-	background-position: center top;
-	background-repeat: no-repeat;
-	padding-bottom: 20vh;
-	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
+  max-width: 100vw;
+  min-height: 854px;
+  background-image: url("https://cdn.discordapp.com/attachments/730091580706259084/827370039388667934/20210401_233606.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
-	text-align: center;
-	padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .page-logo {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .page-title {
-	color: #ffffff;
-	margin: 30px 0;
-	font-family: 'Bebas Neue', cursive;
-	color: #dcaa50;
+  color: #ffffff;
+  margin: 30px 0;
+  font-family: "Bebas Neue", cursive;
+  color: #dcaa50;
 }
 
 button,
 .button-jogar {
-	padding: 0.8rem 1.5rem;
-	margin: 1rem 0;
-	border-radius: 5px;
-	border: none;
-	font-size: 1rem;
-	background-color: #0a4eb9;
-	color: #ffffff;
-	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #0a4eb9;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-	opacity: 95%;
-	background-color: #02234e;
+  opacity: 95%;
+  background-color: #02234e;
 }
 
 button:disabled {
-	padding: 0.8rem 1.5rem;
-	margin: 1rem 0;
-	border-radius: 5px;
-	/* border: 3px solid blue; */
-	font-size: 1rem;
-	background-color: rgba(255, 255, 255, 0.521);
-	color: gray;
-	box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  /* border: 3px solid blue; */
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.521);
+  color: gray;
+  box-shadow: none;
 }
 
 /* form */
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 3%;
 }
 
 h2 {
-	color: white;
+  color: white;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .area-placar {
-	color: white;
-	height: 5vh;
-	margin: 10px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+  color: white;
+  height: 5vh;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .quantidade-cartas {
-	color: white;
-	height: 5vh;
+  color: white;
+  height: 5vh;
 
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .cartas-jogador,
 .cartas-maquina {
-	width: 360px;
-	margin: 0 5%;
+  width: 360px;
+  margin: 0 5%;
 }
 
 .cartas {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-	height: 100%;
-	perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
 }
 
 .card {
-	position: relative;
-	margin: 5px 5vw;
-	transform-style: preserve-3d;
-	transition: transform 0.3s;
+  position: relative;
+  margin: 5px 5vw;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
 }
 
 .card.flip {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .carta-jogador,
 .carta-maquina,
 .card-back {
-	width: 360px;
-	height: 500px;
-	/* overflow: auto; */
-	border-radius: 10px;
-	margin-bottom: 20px;
-	margin: 0 auto;
+  width: 360px;
+  height: 500px;
+  /* overflow: auto; */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-	/* background-size: 350px 300px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  /* background-size: 350px 300px;
 	background-position-x: 5px;
 	background-position-y: 10px; */
-	border-radius: 15px;
+  border-radius: 15px;
 
-	/* background-color: blue; */
-	padding: 5% 0;
-	background-image: url('https://cdn.discordapp.com/attachments/730091580706259084/827046112526729246/WTL_2021_-_Logo.png');
+  /* background-color: blue; */
+  padding: 5% 0;
+  background-image: url("https://cdn.discordapp.com/attachments/730091580706259084/827046112526729246/WTL_2021_-_Logo.png");
 }
 
 /* Edite as cartas aqui */
 .carta-jogador,
 .carta-maquina {
-	width: 360px;
-	height: 500px;
+  width: 360px;
+  height: 500px;
 
-	border-radius: 10px;
-	margin-bottom: 20px;
-	margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
 
-	display: none;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-	/* position: relative; */
-	background-repeat: no-repeat;
-	background-size: 100%;
-	border-radius: 15px;
+  /* position: relative; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 15px;
 
-	padding: 5% 0;
-	background: #205294;
+  padding: 5% 0;
+  background: #205294;
 
-	backface-visibility: hidden;
-	transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 .area-nome {
-	border: #e0f6fd solid;
-	background-color: #e0f6fd34;
+  border: #e0f6fd solid;
+  background-color: #e0f6fd34;
 
-	width: 90%;
-	height: 10%;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 90%;
+  height: 10%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pais {
-	height: 75%;
-	width: 3rem;
-	border-radius: 5px;
-	margin: 2%;
+  height: 75%;
+  width: 3rem;
+  border-radius: 5px;
+  margin: 2%;
 }
 
 .area-nome h2 {
-	color: #dcaa50;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 35px;
-	padding-top: 1%;
+  color: #dcaa50;
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  padding-top: 1%;
 }
 
 .area-imagem {
-	width: 90%;
-	height: 40%;
-	margin: 2% 0;
+  width: 90%;
+  height: 40%;
+  margin: 2% 0;
 
-	border: #e0f6fd solid;
-	border-radius: 5px;
+  border: #e0f6fd solid;
+  border-radius: 5px;
 }
 
 .area-imagem img {
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	/* caso pegue as imagens cortadas: */
-	object-fit: cover;
-	object-position: 50% 10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  /* caso pegue as imagens cortadas: */
+  object-fit: cover;
+  object-position: 50% 10%;
 
-	/* Para as imagens sem edição: 
+  /* Para as imagens sem edição:
 	object-fit: none;
 	object-position: 50% 35%;
 	*/
 }
 
 .area-info {
-	width: 90%;
-	height: 50%;
-	border-radius: 5px;
+  width: 90%;
+  height: 50%;
+  border-radius: 5px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .area-detalhes {
-	border: #e0f6fd solid;
-	background-color: #e0f6fd34;
-	border-radius: 5px;
+  border: #e0f6fd solid;
+  background-color: #e0f6fd34;
+  border-radius: 5px;
 
-	width: 100%;
-	height: 20%;
+  width: 100%;
+  height: 20%;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1%;
 }
 
 .area-detalhes .titulo-detalhes {
-	display: contents;
-	font-family: 'Bebas Neue', cursive;
-	color: #dcaa50;
-	font-size: 18px;
-	/* font-weight: 300; */
-	line-height: 1rem;
+  display: contents;
+  font-family: "Bebas Neue", cursive;
+  color: #dcaa50;
+  font-size: 18px;
+  /* font-weight: 300; */
+  line-height: 1rem;
 }
 
 .area-detalhes span {
-	font-family: 'Montserrat', sans-serif;
-	color: black;
-	font-size: 14px;
-	font-weight: normal;
-	width: max-content;
-	margin-left: 2%;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  width: max-content;
+  margin-left: 2%;
 }
 
 .div-detalhes {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
 
-	width: 60%;
-	font-size: 1rem;
-	padding: 5%;
+  width: 60%;
+  font-size: 1rem;
+  padding: 5%;
 }
 
 .div-detalhes p {
-	width: max-content;
-	padding: 3%;
-	font-size: 0.85rem;
+  width: max-content;
+  padding: 3%;
+  font-size: 0.85rem;
 }
 
 .area-jogo {
-	border: #e0f6fd solid;
-	background-color: #e0f6fd34;
-	border-radius: 5px;
+  border: #e0f6fd solid;
+  background-color: #e0f6fd34;
+  border-radius: 5px;
 
-	width: 100%;
-	height: 76%;
-	padding: 3% 5%;
+  width: 100%;
+  height: 76%;
+  padding: 3% 5%;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .area-atributos {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-	font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
 
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .area-atributos div {
-	width: 80%;
-	display: flex;
+  width: 80%;
+  display: flex;
 }
 
 .area-atributos div input {
-	margin-right: 5%;
+  margin-right: 5%;
 }
 
 .area-atributos p {
-	margin: 0;
+  margin: 0;
 }
 
 .imagem {
-	height: 100%;
-	width: 35%;
+  height: 100%;
+  width: 35%;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
 }
 
 .imagem img {
-	height: 90%;
-	opacity: 50%;
-	padding-bottom: 5%;
+  height: 90%;
+  opacity: 50%;
+  padding-bottom: 5%;
 }
 
 /* Fim das edições */
 
 /* Do JS: */
 .carta-imagem {
-	border: 1px solid black;
-	height: 100px;
-	margin: 10px;
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
 }
 
 .carta-imagem img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .carta-status {
-	height: 160px;
-	margin: 2rem;
-	color: white;
-	z-index: 2;
+  height: 160px;
+  margin: 2rem;
+  color: white;
+  z-index: 2;
 }
 
 .carta-status input {
-	margin: 20px 10px;
-	display: inline;
+  margin: 20px 10px;
+  display: inline;
 }
 
 .resultado-final {
-	color: white;
-	font-size: 2rem;
-	text-transform: uppercase;
-	font-weight: bolder;
-	margin: 0 auto;
-	padding: 1rem;
-	border: 2px solid black;
-	background-color: black;
-	border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+  margin: 0 auto;
+  padding: 1rem;
+
+  color: white;
+  background-color: black;
+
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .info-liga {
-	height: 6vh;
+  height: max-content;
+  width: 70%;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	color: blue;
-	border-radius: 5px;
-	opacity: 80%;
-	font-size: 1rem;
-	margin: 5% auto;
-	padding: 2rem;
-	border: 2px solid white;
-	background-color: white;
-	font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+
+  color: blue;
+  background-color: white;
+  opacity: 80%;
+
+  margin: 5% auto;
+  padding: 2rem;
+
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .--spacing {
-	margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .carta-subtitle {
-	z-index: 2;
-	position: absolute;
-	top: 16px;
-	left: 37px;
-	font-weight: 800;
-	text-transform: uppercase;
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  left: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 #cartas {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carta-status p {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 810px) {
-	.placar {
-		height: 10vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  .placar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.quantidade-cartas {
-		color: white;
-		height: 10vh;
+  .quantidade-cartas {
+    color: white;
+    height: 10vh;
 
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-	.cartas {
-		flex-direction: column;
-		justify-content: space-between;
-		align-content: center;
-	}
+  .cartas {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
 
-	.carta-jogador,
-	.carta-maquina,
-	.card-back {
-		width: 340px;
-		height: 480px;
-		margin: 0 auto;
+  .carta-jogador,
+  .carta-maquina,
+  .card-back {
+    width: 340px;
+    height: 480px;
+    margin: 0 auto;
 
-		margin-bottom: 5px;
-		padding: 2% 0;
-	}
+    margin-bottom: 5px;
+    padding: 2% 0;
+  }
 
-	.div-detalhes p {
-		font-size: 0.8rem;
-	}
+  .div-detalhes p {
+    font-size: 0.8rem;
+  }
 }

@@ -864,15 +864,13 @@ let cartas = [
 	  Tática: ,
 	  Mentalidade: ,
 	  "Game Sense": ,
-	  Micro: 
+	  Micro:
 	}
   }
 */
 
 let pontosJogador = 0;
 let pontosMaquina = 0;
-
-/* Atenção aqui: */
 
 // Como embaralhar arrays!!!!
 function embaralhar(arr) {
@@ -893,17 +891,9 @@ for (let i = 0; i < metade; i++) {
 	let numeroCarta = parseInt(Math.random() * cartas.length);
 	arrCartasJogador.push(cartas[numeroCarta]);
 	cartas.splice(numeroCarta, 1);
-
-	// console.log('i', i);
-	// console.log('numeroCarta', numeroCarta);
-	// console.log('arrCartasJogador', arrCartasJogador);
-	// console.log('cartas', cartas);
 }
 
 let arrCartasMaquina = cartas;
-
-/* Fim da edição
- */
 
 atualizaPlacar();
 atualizaQuantidadeDeCartas();
@@ -911,7 +901,6 @@ atualizaQuantidadeDeCartas();
 function atualizaQuantidadeDeCartas() {
 	let divQuantidadeCartasJogador = document.querySelector('.cartas-jogador');
 	let divQuantidadeCartasMaquina = document.querySelector('.cartas-maquina');
-	// let html = 'Quantidade de cartas no jogo: ' + cartas.length;
 	let cartasJogador = `<p>Sua quantidade de cartas no jogo: ${arrCartasJogador.length}</p>`;
 
 	let cartasMaquina = `<p>Quantidade de cartas do computador: ${arrCartasMaquina.length}</p>`;
@@ -928,14 +917,6 @@ function atualizaPlacar() {
 }
 
 function sortearCarta() {
-	// let numeroCartaMaquina = parseInt(Math.random() * cartas.length);
-	// cartaMaquina = cartas[numeroCartaMaquina];
-	// cartas.splice(numeroCartaMaquina, 1);
-
-	// let numeroCartaJogador = parseInt(Math.random() * cartas.length);
-	// cartaJogador = cartas[numeroCartaJogador];
-	// cartas.splice(numeroCartaJogador, 1);
-
 	let numeroCartaMaquina = parseInt(Math.random() * arrCartasMaquina.length);
 	cartaMaquina = arrCartasMaquina[numeroCartaMaquina];
 
@@ -943,18 +924,9 @@ function sortearCarta() {
 	cartaJogador = arrCartasJogador[numeroCartaJogador];
 
 	document.getElementById('btnSortear').disabled = true;
-	/*
-		document.getElementById("btnJogar").disabled = false;
-		*/
 
-	// let cardJogador = document.querySelector('.card-jogador');
 
 	exibeCartaJogador();
-
-	/* Declarada no escopo global:
-	   let card_back_player = document.querySelector(".card-back-player");
-		let carta_jogador = document.querySelector(".carta-jogador");
-	   */
 
 	card_back_player.style.display = 'none';
 	carta_jogador.style.display = 'flex';
@@ -1035,25 +1007,6 @@ function jogar() {
 		embaralhar(arrCartasMaquina);
 	}
 
-	// console.log('arrCartasJogador', arrCartasJogador.map( o => o.nome ));
-	// console.log('arrCartasMaquina', arrCartasMaquina.map( o => o.nome ));
-
-	/*
-  let fimDeJogo = document.querySelector("wrapper");
-  */
-
-	// if (cartas.length == 0) {
-	// 	alert('Fim de jogo');
-	// 	btnRodada.disabled = true;
-	// 	if (pontosJogador > pontosMaquina) {
-	// 		htmlResultado =
-	// 			'<p class="resultado-final">Parabéns! :D <br> Você venceu!</p>';
-	// 	} else if (pontosJogador < pontosMaquina) {
-	// 		htmlResultado = '<p class="resultado-final">Você perdeu ☹</p>';
-	// 	} else {
-	// 		htmlResultado = '<p class="resultado-final">Empate!</p>';
-	// 	}
-	// }
 	if (arrCartasMaquina == 0) {
 		htmlResultado = '<p class="resultado-final">Parabéns! :D <br> Você venceu!</p>';
 		btnRodada.disabled = true;
@@ -1068,28 +1021,17 @@ function jogar() {
 
 	btnRodada.textContent = 'Próxima rodada';
 
-	// let cardMaquina = document.querySelector('.card-maquina');
 
 	if (btnRodada.textContent === 'Próxima rodada') {
-		// btnProximaRodada.addEventListener('click', proximaRodada())
 		btnRodada.setAttribute('onclick', 'proximaRodada()');
 	} else {
 		btnRodada.setAttribute('onclick', 'jogar()');
 	}
 
-	/*
-  document.getElementById("btnJogar").disabled = true;
-  document.getElementById("btnProximaRodada").disabled = false;
-  */
 	atualizaPlacar();
 
 	exibeCartaMaquina();
 	atualizaQuantidadeDeCartas();
-
-	/* Declarada no escopo global:
-  let card_back_maquina = document.querySelector(".card-back-maquina");
-  let carta_maquina = document.querySelector(".carta-maquina");
-  */
 
 	card_back_maquina.style.display = 'none';
 	carta_maquina.style.display = 'flex';
