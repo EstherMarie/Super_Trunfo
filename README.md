@@ -1,6 +1,6 @@
 # Imersao.dev: Super Trunfo
 
-![GitHub License](https://img.shields.io/github/license/EstherMarie/Super_Trunfo)
+![GitHub](https://img.shields.io/github/license/EstherMarie/Super_Trunfo?style=flat-square)
 
 > Jogo de cartas estilo Super Trunfo criado durante a 1ª edição da ImersãoDev da Alura.
 
