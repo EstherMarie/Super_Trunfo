@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="./script.js" as="script" />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="preload" href="./src/script.js" as="script" /> -->
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Super Trunfo - World Team League 2021</title>
   </head>
 
@@ -20,7 +20,7 @@
         <h1 class="page-title">Super Trunfo - World Team League 2021</h1>
 
         <form id="form">
-          <h2>Escolha o seu atributo</h2>
+          <h2 aria-hidden="true">Escolha o seu atributo</h2>
           <div class="wrapper">
             <div class="area-placar">Placar: <span class="placar"></span></div>
             <div class="quantidade-cartas">
@@ -32,8 +32,8 @@
                 <div class="card-back card-back-player"></div>
                 <div class="carta-jogador">
                   <div class="area-nome">
+                    <h2 class="player"></h2>
                     <img src="" class="pais" alt="" />
-                    <h2 class="player">Player</h2>
                   </div>
                   <div class="area-imagem">
                     <img src="" class="img-carta-jogador" alt="" />
@@ -52,7 +52,12 @@
                       </div>
                     </div>
                     <div class="area-jogo">
-                      <div class="area-atributos"></div>
+                      <fieldset>
+                        <legend class="sr-only">
+                          Escolha seu melhor atributo
+                        </legend>
+                        <div class="area-atributos"></div>
+                      </fieldset>
                       <div class="imagem">
                         <img src="" class="icon" alt="" />
                       </div>
@@ -64,8 +69,8 @@
                 <div class="card-back card-back-maquina"></div>
                 <div class="carta-maquina" class="carta">
                   <div class="area-nome">
+                    <h2 class="player player-maq"></h2>
                     <img src="" class="pais pais-maq" alt="" />
-                    <h2 class="player player-maq">Player</h2>
                   </div>
                   <div class="area-imagem">
                     <img src="" class="img-carta-maquina" alt="" />
@@ -84,7 +89,12 @@
                       </div>
                     </div>
                     <div class="area-jogo">
-                      <div class="area-atributos area-atributos-maq"></div>
+                      <fieldset>
+                        <legend class="sr-only">
+                          Escolha seu melhor atributo
+                        </legend>
+                        <div class="area-atributos area-atributos-maq"></div>
+                      </fieldset>
                       <div class="imagem">
                         <img src="" class="icon icon-maq" alt="" />
                       </div>
@@ -97,6 +107,7 @@
         </form>
 
         <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
         <button
           class="button-jogar"
           type="button"
@@ -106,7 +117,9 @@
         >
           Jogar
         </button>
+
         <div id="resultado"></div>
+
         <button
           type="button"
           id="btnProximaRodada"
@@ -130,6 +143,6 @@
       </div>
     </main>
 
-    <script src="./script.js" defer></script>
+    <script src="./src/script.js"></script>
   </body>
 </html>
